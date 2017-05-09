@@ -1,4 +1,4 @@
-var app = angular.model('ourApp', {});
+var app = angular.module('ourApp', []);
 
 app.component('navBar', {
   template: `
@@ -28,11 +28,11 @@ app.component('navBar', {
   `
 })
 
-app.comonent('theForm', {
+app.component('theForm', {
   template: `
-    <p>Enter your name: <input type="text" ng-model="name"></p>
-    <p>Hello: {{name}}</p>
-  `
+    <p>Enter your name: <input type="text" ng-model="vm.name"></p>
+    <p>Hello: {{vm.name}}</p>
+  `,
   controller: function() {
     var vm = this;
   }
