@@ -35,5 +35,6 @@ app.component('theForm', {
   `,
   controller: function() {
     var vm = this;
-  }
+  },
+  controllerAs:'vm'
 })
